@@ -1,0 +1,21 @@
+n = int(input())
+bill = [100,20,10,5,1]
+count = 0
+if n//100 != 0:
+    count += n//100
+    n = n-(n//100)*100
+if n//20 != 0:
+    temp = n//20
+    count += temp
+    n -= temp*20
+if n//10 !=0:
+    temp = n//10
+    count += temp
+    n -= temp*10
+if n//5 !=0:
+    temp = n//5
+    count += temp
+    n -= temp*5
+if n != 0:
+    count += n
+print(count)
